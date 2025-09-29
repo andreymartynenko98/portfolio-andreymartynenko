@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrey Martynenko — Portfolio</title>
+  <meta name="description" content="Andrey Martynenko — data & ML portfolio featuring AutoValue (car price prediction) and deep learning for transportation images." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="hero">
+      <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Andrey Martynenko" />
+      <div class="intro">
+        <h1>Hi, I’m <span class="name">Andrey Martynenko</span></h1>
+        <p class="tagline">Data & Machine Learning · Web · AI-assisted development</p>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <ul class="social" aria-label="Social links">
+          <li><a href="https://github.com/andreymartynenko98" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/andreymartynenko29" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I’m a graduate student focused on building practical machine-learning solutions and clean, accessible web UIs.
+        Recent work includes car price prediction and transportation image recognition with an emphasis on reproducible
+        pipelines, careful evaluation, and clear documentation.
+      </p>
+      <ul class="quick-facts">
+        <li><strong>Location:</strong> Tampa, FL (open to relocate)</li>
+        <li><strong>Open to:</strong> Internships · ML/DS roles · Research collaborations</li>
+        <li><strong>Currently learning:</strong> Model monitoring, MLOps basics, transfer learning</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <!-- AutoValue -->
+      <article class="project">
+        <header>
+          <h3>
+            <a id="p1-link" href="https://github.com/andreymartynenko98/AutoValue_Car_Price_Prediction_ML" target="_blank" rel="noopener">
+              AutoValue: Car Price Prediction with Scikit-Learn
+            </a>
+          </h3>
+          <p class="meta">Regression · scikit-learn · 2025</p>
+        </header>
+        <p>
+          End-to-end regression to predict used-car prices from features like make/model, year, and mileage.
+          Compares multiple models with cross-validation and evaluates using MAE/RMSE in a leak-free pipeline.
+        </p>
+        <p class="links">
+          <a class="btn" href="https://github.com/andreymartynenko98/AutoValue_Car_Price_Prediction_ML" target="_blank" rel="noopener">Repository</a>
+        </p>
+      </article>
+
+      <!-- Transportation Image Recognition -->
+      <article class="project">
+        <header>
+          <h3>
+            <a id="p2-link" href="https://github.com/andreymartynenko98/Transportation_Image_Recognition_DL" target="_blank" rel="noopener">
+              Deep Learning for Transportation Image Recognition: A Custom CNN vs. VGG16 Approach
+            </a>
+          </h3>
+          <p class="meta">CNN · Transfer Learning · 2025</p>
+        </header>
+        <p>
+          Built and evaluated a custom CNN against VGG16 transfer learning to classify transportation images.
+          Compared accuracy and macro P/R/F1, training time, and model complexity to highlight when lightweight
+          models can rival pretrained backbones.
+        </p>
+        <p class="links">
+          <a class="btn" href="https://github.com/andreymartynenko98/Transportation_Image_Recognition_DL" target="_blank" rel="noopener">Repository</a>
+          <a class="btn ghost" href="https://www.kaggle.com/datasets/abtabm/multiclassimagedatasetairplanecar" target="_blank" rel="noopener">Dataset</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <ul class="skills">
+        <li>Python (pandas, scikit-learn, matplotlib)</li>
+        <li>Deep Learning (TensorFlow/Keras · PyTorch)</li>
+        <li>Data Wrangling & Visualization</li>
+        <li>Web (HTML/CSS, basic JS)</li>
+        <li>Git & GitHub · CI basics</li>
+        <li>AI tools (ChatGPT, Copilot)</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        Email: <a href="mailto:andreymartynenko@usf.edu">andreymartynenko@usf.edu</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/andreymartynenko29" target="_blank" rel="noopener">@andreymartynenko29</a><br />
+        GitHub: <a href="https://github.com/andreymartynenko98" target="_blank" rel="noopener">@andreymartynenko98</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Andrey Martynenko • Built with HTML/CSS</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
